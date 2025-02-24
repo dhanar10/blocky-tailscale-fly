@@ -1,9 +1,4 @@
-# fly.toml app configuration file generated for fly-blocky-tailscale on 2025-02-22T21:49:20+07:00
-#
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
-
-app = 'fly-blocky-tailscale'
+app = 'blocky-tailscale'
 primary_region = 'sin'
 
 [vm]
