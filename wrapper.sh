@@ -8,7 +8,9 @@ fi
 
 tailscaled --tun=userspace-networking &
 
-tailscale up --authkey=${TS_AUTHKEY} --hostname=${TS_HOSTNAME} --accept-dns=false
+if [ -z "${TS_STATE}" ]; then
+    tailscale up --authkey=${TS_AUTHKEY} --hostname=${TS_HOSTNAME} --accept-dns=false
+fi
 
 blocky --config /etc/blocky/config.yml &
 
